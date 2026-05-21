@@ -12,4 +12,11 @@ public class ResponseSpecification {
         .build();
   }
 
+  public static io.restassured.specification.ResponseSpecification expectedStatusCodeWithoutResponse(
+      int code) {
+    return new ResponseSpecBuilder()
+        .expectStatusCode(code)
+        .build();
+  }
+
 }
