@@ -47,8 +47,8 @@ gradlew testAndReport
 
 Ниже скриншот из Allure отчета (результат команды gradlew allureServe):
 
-![allure](/readme-resources/allure.jpg)
+![allure](/readme-resources/allure.JPG)
 
-![allure-suites](/readme-resources/allure-suites.jpg)
+![allure-suites](/readme-resources/allure-suites.JPG)
 
 ### Автор: Anton Evgenev. tg: @tdutanton
