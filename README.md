@@ -51,4 +51,6 @@ gradlew testAndReport
 
 ![allure-suites](/readme-resources/allure-suites.JPG)
 
+![allure-history](/readme-resources/allure-history.JPG)
+
 ### Автор: Anton Evgenev. tg: @tdutanton
