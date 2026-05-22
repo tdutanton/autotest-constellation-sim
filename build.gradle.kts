@@ -35,12 +35,6 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}")
 // AssertJ для ассертов
     implementation("org.assertj:assertj-core:${assertjVersion}")
-// Lombok
-    testCompileOnly("org.projectlombok:lombok:1.18.30")
-    testAnnotationProcessor("org.projectlombok:lombok:1.18.30")
-
-    compileOnly("org.projectlombok:lombok:1.18.30")
-    annotationProcessor("org.projectlombok:lombok:1.18.30")
 }
 
 tasks.test {
@@ -64,10 +58,6 @@ allure {
 }
 
 tasks.register("testAndReport") {
-    dependsOn(tasks.test, tasks.allureReport)
+    dependsOn(tasks.test)
     finalizedBy(tasks.allureServe)
-}
-
-tasks.register("allureReportCi") {
-    dependsOn(tasks.test, tasks.allureReport)
 }
