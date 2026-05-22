@@ -30,6 +30,15 @@ docker compose up -d server
 gradlew test
 ```
 
+Или
+
+```bash
+gradlew clean test
+```
+
+для повторного запуска (в случае появления сообщения "Test events were not received" из-за
+кеширования gradle).
+
 Allure отчет:
 
 ```bash
